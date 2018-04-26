@@ -1,0 +1,90 @@
+/* Fonts */
+/* Fonts-size */
+.main {
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  max-height: 754px; }
+  @media only screen and (min-width: 468px) {
+    .main {
+      flex-direction: row; } }
+  .main .page {
+    position: relative;
+    z-index: 1;
+    max-width: 626px;
+    max-height: 754px; }
+    @media only screen and (min-width: 468px) {
+      .main .page:first-child {
+        margin-right: 2%; } }
+    .main .page .module {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      margin-bottom: 1em; }
+      .main .page .module .content {
+        position: relative;
+        z-index: 8;
+        width: 100%;
+        text-align: center; }
+        .main .page .module .content h2 {
+          margin-top: 2em;
+          font-size: 1.54em;
+          color: #000000; }
+        .main .page .module .content p {
+          font-size: 1.04em;
+          color: #747474;
+          padding: 0 6em; }
+        .main .page .module .content button {
+          color: #0E2A30;
+          font-size: 0.63em;
+          outline: none;
+          border: 1px solid rgba(15, 41, 48, 0.2);
+          background-color: white;
+          padding: 1.2em 0;
+          min-width: 40%;
+          margin: 1em 0 5em 0; }
+      .main .page .module img {
+        display: block;
+        position: relative;
+        z-index: 10;
+        width: 75%;
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0 25px 45px 0 #D7D7D7; }
+      .main .page .module .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+        height: 85%;
+        background-color: white; }
+      .main .page .module .rectangle {
+        position: absolute;
+        bottom: 4.5em;
+        z-index: -1;
+        width: 85%;
+        height: 2.5em;
+        border: 1px solid #C2D2C2; }
+
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif; }
+  @media only screen and (min-width: 321px) and (max-height: 321px) {
+    body {
+      font-size: 13px; } }
+  @media only screen and (min-width: 468px) and (min-height: 321px) {
+    body {
+      font-size: 14px; } }
+  @media only screen and (min-width: 768px) and (min-height: 468px) {
+    body {
+      font-size: 15px; } }
+  @media only screen and (min-width: 1224px) and (max-height: 767px) {
+    body {
+      font-size: 16px; } }
+  @media only screen and (min-width: 1224px) and (min-height: 768px) {
+    body {
+      font-size: 18px; } }
+
+/*# sourceMappingURL=App.css.map */
