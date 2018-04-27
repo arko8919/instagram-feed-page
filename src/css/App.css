@@ -135,23 +135,23 @@ header h1 {
 footer {
   padding: 3rem 1.5rem;
   text-align: center; }
-  footer .icons a {
+  footer a {
     color: #646464;
     cursor: pointer;
     font-size: 3rem;
-    margin: 0 1rem;
+    margin: 0 .5rem;
     text-decoration: none;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s; }
     @media only screen and (min-width: 768px) {
-      footer .icons a {
+      footer a {
         font-size: 4rem; } }
     @media only screen and (min-width: 1224px) {
-      footer .icons a {
+      footer a {
         font-size: 5rem; } }
-    footer .icons a:hover {
+    footer a:hover {
       color: #000; }
   footer p {
     color: #000;

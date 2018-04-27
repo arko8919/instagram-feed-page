@@ -2,24 +2,22 @@ footer {
   padding: 3rem 1.5rem;
   text-align: center;
 
-  .icons {
-    a {
-      color: $decoration;
-      cursor: pointer;
-      font-size: 3rem;
-      margin: 0 1rem;
-      text-decoration: none; // IE 9 remove underline
-      @include transition(all .5s);
-      @media only screen and (min-width: 768px) {
-        font-size: 4rem;
-      }
-      @media only screen and (min-width: 1224px) {
-        font-size: 5rem;
-      }
+  a {
+    color: $decoration;
+    cursor: pointer;
+    font-size: 3rem;
+    margin: 0 .5rem;
+    text-decoration: none; // IE 9 remove underline
+    @include transition(all .5s);
+    @media only screen and (min-width: 768px) {
+      font-size: 4rem;
+    }
+    @media only screen and (min-width: 1224px) {
+      font-size: 5rem;
+    }
 
-      &:hover {
-        color: $headers;
-      }
+    &:hover {
+      color: $headers;
     }
   }
 
