@@ -12,7 +12,8 @@ $text: #747474;
 $decoration: #646464;
 $background: #fff;
 $rectangle: #C2D2C2;
-$button-border: rgba(15, 41, 48, .2);
+$button-border: rgba(15, 41, 48, 0.2);
+$button-border-fallback: #0F2930; // IE 9 fallback
 $button-color: #0E2A30;
 $button-background-hover: #000;
 $button-color-hover: #fff;

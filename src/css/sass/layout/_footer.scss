@@ -1,20 +1,14 @@
 footer {
-  @extend %display-flex;
-  @include flex-flow(column nowrap);
-  @include align-items(center);
   padding: 3rem 1.5rem;
+  text-align: center;
 
   .icons {
-    @extend %display-flex;
-    @include flex-flow(row wrap);
-    @include align-items(center);
-    @include justify-content(center);
-
     a {
       color: $decoration;
       cursor: pointer;
       font-size: 3rem;
       margin: 0 1rem;
+      text-decoration: none; // IE 9 remove underline
       @include transition(all .5s);
       @media only screen and (min-width: 768px) {
         font-size: 4rem;

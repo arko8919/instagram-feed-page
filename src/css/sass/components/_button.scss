@@ -1,7 +1,9 @@
 %button {
   button {
+    opacity: 1;
     background-color: $background;
-    border: 1px solid $button-border;
+    border: 1px solid $button-border-fallback;
+    border: 1px solid $button-border; // IE 9 fallback
     color: $button-color;
     cursor: pointer;
     font-size: 0.63em;
@@ -17,5 +19,6 @@
       background-color: $button-background-hover;
       border-radius: 5px;
     }
+
   }
 }

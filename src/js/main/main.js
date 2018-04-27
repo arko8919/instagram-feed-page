@@ -25,7 +25,9 @@ export class Main extends React.Component {
         const xhr = new XMLHttpRequest();
         const url = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=' +
             // access token
-            '7600268179.4606266.0a0e1c6cf9f04bb38c9e7362a4880a98';
+            '7600268179.4606266.0a0e1c6cf9f04bb38c9e7362a4880a98' +
+            // latest 10 images
+            '&count=10';
 
         xhr.dataType = "json";
         xhr.onreadystatechange = () => {
@@ -96,7 +98,7 @@ export class Main extends React.Component {
     render() {
         console.log(this.state.response);
         return (
-            <div className="main">
+            <div className='main'>
                 <Page
                     onClick={this.handleClickPageOne}
                     urlImage={this.state.urlImageOne}

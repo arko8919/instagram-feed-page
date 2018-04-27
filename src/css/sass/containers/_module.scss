@@ -3,11 +3,8 @@
 
 %module {
   .module {
-    @extend %display-flex;
-    @include flex-flow(column nowrap);
-    @include align-items(center);
-
     margin-bottom: 1em;
+    position: relative;
 
     // title, description, button
     @extend %copy;
@@ -18,10 +15,10 @@
     // div as decoration
     .decoration {
       @include transform(rotate(-45deg));
-
+      text-align: center;
       background-color: $decoration;
       height: 0.2em;
-      margin: 2.5em 0 1.5em 0;
+      margin: 2.5em auto 1.5em auto;
       position: relative;
       width: 0.2em;
       z-index: 20;
@@ -38,11 +35,12 @@
     }
 
     .rectangle {
-      bottom: 4.25em;
+      bottom: 5.5em;
       border: 1px solid $rectangle;
-      height: 2.5em;
+      margin: auto;
+      height: 4em;
       position: relative;
-      width: 85%;
+      width: 87%;
       z-index: -1;
     }
   }

@@ -1,13 +1,10 @@
 @import '../containers/module';
 
 .main {
-  @extend %display-flex;
-  @include flex-direction(column);
-
   max-width: 1280px;
-
+  text-align: center;
   @media only screen and (min-width: 468px) {
-    @include flex-direction(row);
+
   }
   @media only screen and (min-width: 768px) {
     margin: 0 2em;
@@ -17,14 +14,18 @@
   }
 
   .page {
+    display: inline-block;
     max-width: 626px;
     position: relative;
+    width: 100%;
     z-index: 1;
     @media only screen and (min-width: 468px) {
+      width: 45%;
       &:first-child {
         margin-right: 2%;
       }
     }
+
     @extend %module;
   }
 }
