@@ -1,90 +1,24 @@
+@import '../containers/module';
+
 .main {
-  //border: 1px solid red;
-  background-color: #F7F7F7;
-  display: flex;
-  flex-direction: column;
+  @extend %display-flex;
+  @include flex-direction(column);
+
   max-width: 1280px;
-  max-height: 754px;
 
   @media only screen and (min-width: 468px) {
-    flex-direction: row;
+    @include flex-direction(row);
   }
 
   .page {
-    //border: 1px solid green;
+    max-width: 626px;
     position: relative;
     z-index: 1;
-    max-width: 626px;
-    max-height: 754px;
     @media only screen and (min-width: 468px) {
       &:first-child {
         margin-right: 2%;
-
       }
     }
-
-    .module {
-      //border: 1px solid blue;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      margin-bottom: 1em;
-      .content {
-        //border: 1px solid black;
-        position: relative;
-        z-index: 8;
-        width: 100%;
-        text-align: center;
-        h2 {
-          margin-top: 2em;
-          font-size: 1.54em;
-          color: #000000;
-        }
-        p {
-          font-size: 1.04em;
-          color: #747474;
-          padding: 0 6em;
-        }
-        button {
-          color: #0E2A30;
-          font-size: 0.63em;
-          outline: none;
-          border: 1px solid rgba(15, 41, 48, .2);
-          background-color: white;
-          padding: 1.2em 0;
-          min-width: 40%;
-          margin: 1em 0 5em 0;
-        }
-      }
-      img {
-        //border: 1px solid pink;
-        display: block;
-        position: relative;
-        z-index: 10;
-        width: 75%;
-        max-width: 100%;
-        height: auto;
-        box-shadow: 0 25px 45px 0 #D7D7D7;
-      }
-      .background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 5;
-        height: 85%;
-        background-color: white;
-
-      }
-      .rectangle {
-        position: absolute;
-        bottom: 4.5em;
-        z-index: -1;
-        width: 85%;
-        height: 2.5em;
-        border: 1px solid #C2D2C2;
-
-      }
-    }
+    @extend %module;
   }
 }

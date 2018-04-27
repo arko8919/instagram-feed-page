@@ -2,11 +2,14 @@
 @import 'helpers/placeholders';
 @import 'helpers/mixins';
 
+@import 'layout/header';
 @import 'layout/main';
+@import 'layout/footer';
 
 body {
-  font-size: $standard-size;
+  background-color: $main-background;
   font-family: $standard-font;
+  font-size: $standard-size;
 
   @media only screen and (min-width: 321px) and (max-height: 321px) {
     font-size: 13px;

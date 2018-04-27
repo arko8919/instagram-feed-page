@@ -1,0 +1,11 @@
+%img {
+  img {
+    box-shadow: 0 25px 45px 0 $shadow, 0 0 15px #000;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    width: 75%;
+    z-index: 10;
+  }
+}

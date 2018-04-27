@@ -1,0 +1,49 @@
+@import 'copy';
+@import '../components/img';
+
+%module {
+  .module {
+    @extend %display-flex;
+    @include flex-flow(column nowrap);
+    @include align-items(center);
+
+    margin-bottom: 1em;
+
+    // title, description, button
+    @extend %copy;
+
+    // image
+    @extend %img;
+
+    // div as decoration
+    .decoration {
+      @include transform(rotate(-45deg));
+
+      background-color: $decoration;
+      height: 0.2em;
+      margin: 2.5em 0 1.5em 0;
+      position: relative;
+      width: 0.2em;
+      z-index: 20;
+    }
+
+    .background {
+      background-color: $background;
+      height: 85%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 5;
+    }
+
+    .rectangle {
+      bottom: 4.5em;
+      border: 1px solid $rectangle;
+      height: 2.5em;
+      position: absolute;
+      width: 85%;
+      z-index: -1;
+    }
+  }
+}

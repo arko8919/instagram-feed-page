@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Content} from './content/content';
+import {Copy} from './content/copy';
 import {Img} from './img';
 import {Decoration} from './decoration';
 
@@ -9,9 +9,14 @@ export class Page extends React.Component {
         return (
             <div className='page'>
                 <div className='module'>
-                    <Content/>
-                    <Img/>
+                    <Copy
+                        onClick={this.props.onClick}
+                        titleImage={this.props.titleImage}
+                    />
                     <Decoration/>
+                    <Img
+                        urlImage={this.props.urlImage}
+                    />
                     <div className='background'>
                     </div>
                     <div className='rectangle'>
