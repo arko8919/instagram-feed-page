@@ -38,10 +38,10 @@
     }
 
     .rectangle {
-      bottom: 4.5em;
+      bottom: 4.25em;
       border: 1px solid $rectangle;
       height: 2.5em;
-      position: absolute;
+      position: relative;
       width: 85%;
       z-index: -1;
     }

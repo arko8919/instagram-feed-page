@@ -9,6 +9,12 @@
   @media only screen and (min-width: 468px) {
     @include flex-direction(row);
   }
+  @media only screen and (min-width: 768px) {
+    margin: 0 2em;
+  }
+  @media only screen and (min-width: 1224px) {
+    margin: 0 5em;
+  }
 
   .page {
     max-width: 626px;

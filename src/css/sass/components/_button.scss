@@ -3,10 +3,19 @@
     background-color: $background;
     border: 1px solid $button-border;
     color: $button-color;
+    cursor: pointer;
     font-size: 0.63em;
     margin: 1em 0 0 0;
     min-width: 40%;
     outline: none;
     padding: 1.2em 0;
+    text-transform: uppercase;
+    @include transition(.5s);
+
+    &:hover {
+      color: $button-color-hover;
+      background-color: $button-background-hover;
+      border-radius: 5px;
+    }
   }
 }

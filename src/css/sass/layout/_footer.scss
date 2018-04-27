@@ -2,29 +2,44 @@ footer {
   @extend %display-flex;
   @include flex-flow(column nowrap);
   @include align-items(center);
-  padding: 40px 20px;
+  padding: 3rem 1.5rem;
 
   .icons {
     @extend %display-flex;
     @include flex-flow(row wrap);
     @include align-items(center);
     @include justify-content(center);
-    font-size: 3em;
 
     a {
-      cursor: pointer;
       color: $decoration;
-      margin: 0 5px;
+      cursor: pointer;
+      font-size: 3rem;
+      margin: 0 1rem;
       @include transition(all .5s);
+      @media only screen and (min-width: 768px) {
+        font-size: 4rem;
+      }
+      @media only screen and (min-width: 1224px) {
+        font-size: 5rem;
+      }
+
       &:hover {
         color: $headers;
       }
     }
   }
+
   p {
-    margin-top: 30px;
-    font-size: 1em;
-    text-transform: uppercase;
+    color: $headers;
     font-family: $mono-font;
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    text-transform: uppercase;
+    @media only screen and (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+    @media only screen and (min-width: 1224px) {
+      font-size: 1.5rem;
+    }
   }
 }
