@@ -1,22 +1,23 @@
 /* Fonts */
-$standard-font: 'Open Sans', sans-serif;
 $mono-font: 'Roboto Mono', monospace;
+$standard-font: 'Open Sans', sans-serif;
 
 /* Fonts-size */
-$standard-size: 14px;
+$standard-size: 10px;
 
 /* Colors */
-$main-background: #F7F7F7;
-$headers: #000;
-$text: #747474;
-$decoration: #646464;
 $background: #fff;
-$rectangle: #C2D2C2;
 $button-border: rgba(15, 41, 48, 0.2);
-$button-border-fallback: #0F2930; // IE 9 fallback
+$button-border-fallback: #0F2930; // fallback
 $button-color: #0E2A30;
-$button-background-hover: #000;
 $button-color-hover: #fff;
-$shadow: #D7D7D7;
+$button-background-hover: #000;
+$decoration: #646464;
+$headers: #000;
 // extra detail on first letter in header
 $line: #969696;
+$main-background: #F7F7F7;
+$rectangle: #C2D2C2;
+$shadow: #D7D7D7;
+$text: #747474;
+$text-shadow: #E74C3C;

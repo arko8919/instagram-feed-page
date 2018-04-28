@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
-import {Header} from './header/header';
-import {Main} from './main/main';
-import {Footer} from './footer/footer';
+import {Header} from './components/header';
+import {Main} from './containers/main';
+import {Footer} from './components/footer';
 
 import '../css/App.css'; // application styles
 

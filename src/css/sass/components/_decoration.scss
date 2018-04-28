@@ -2,11 +2,11 @@
   .decoration {
     @include transform(rotate(-45deg));
     background-color: $decoration;
-    text-align: center;
-    height: 0.2em;
+    height: 0.3em;
     margin: 2.5em auto 1.5em auto;
     position: relative;
-    width: 0.2em;
+    text-align: center;
+    width: 0.3em;
     z-index: 20;
   }
 }

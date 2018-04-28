@@ -3,11 +3,11 @@ footer {
   text-align: center;
 
   a {
-    color: $decoration;
+    color: $button-color;
     cursor: pointer;
     font-size: 3rem;
     margin: 0 .5rem;
-    text-decoration: none; // IE 9 remove underline
+    text-decoration: none; // remove underline on IE9
     @include transition(all .5s);
     @media only screen and (min-width: 768px) {
       font-size: 4rem;
@@ -17,7 +17,7 @@ footer {
     }
 
     &:hover {
-      color: $headers;
+      color: $decoration;
     }
   }
 

@@ -1,24 +1,22 @@
 %button {
   button {
-    opacity: 1;
     background-color: $background;
     border: 1px solid $button-border-fallback;
-    border: 1px solid $button-border; // IE 9 fallback
+    border: 1px solid $button-border;
     color: $button-color;
     cursor: pointer;
-    font-size: 0.63em;
-    margin: 1em 0 0 0;
-    min-width: 40%;
+    display: block;
+    font-size: 1.28em;
+    margin: 2em auto 3em auto;
     outline: none;
-    padding: 1.2em 0;
+    padding: 1em 0;
     text-transform: uppercase;
+    width: 40%;
     @include transition(.5s);
-
     &:hover {
       color: $button-color-hover;
       background-color: $button-background-hover;
       border-radius: 5px;
     }
-
   }
 }

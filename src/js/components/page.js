@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {Copy} from './copy/copy';
+import {Copy} from './copy';
 import {Img} from './img';
-import {Decoration} from './decoration';
 
 export const Page = props => {
     return (
@@ -12,15 +11,13 @@ export const Page = props => {
                     onClick={props.onClick}
                     titleImage={props.titleImage}
                 />
-                <Decoration/>
+                <div className='decoration'></div>
                 <Img
                     titleImage={props.titleImage}
                     urlImage={props.urlImage}
                 />
-                <div className='background'>
-                </div>
-                <div className='rectangle'>
-                </div>
+                <div className='background'></div>
+                <div className='rectangle'></div>
             </div>
         </div>
     )
