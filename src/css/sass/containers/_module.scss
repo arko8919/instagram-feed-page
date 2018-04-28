@@ -1,5 +1,8 @@
 @import 'copy';
 @import '../components/img';
+@import '../components/background';
+@import '../components/decoration';
+@import '../components/rectangle';
 
 %module {
   .module {
@@ -13,35 +16,12 @@
     @extend %img;
 
     // div as decoration
-    .decoration {
-      @include transform(rotate(-45deg));
-      text-align: center;
-      background-color: $decoration;
-      height: 0.2em;
-      margin: 2.5em auto 1.5em auto;
-      position: relative;
-      width: 0.2em;
-      z-index: 20;
-    }
+    @extend %decoration;
 
-    .background {
-      background-color: $background;
-      height: 85%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: 5;
-    }
+    // background div blending into copy and img
+    @extend %background;
 
-    .rectangle {
-      bottom: 5.5em;
-      border: 1px solid $rectangle;
-      margin: auto;
-      height: 4em;
-      position: relative;
-      width: 87%;
-      z-index: -1;
-    }
+    // div with rectangle shape positioned bottom and behind background div and img
+    @extend %rectangle;
   }
 }

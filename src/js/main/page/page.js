@@ -14,6 +14,7 @@ export const Page = props => {
                 />
                 <Decoration/>
                 <Img
+                    titleImage={props.titleImage}
                     urlImage={props.urlImage}
                 />
                 <div className='background'>

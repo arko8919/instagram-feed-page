@@ -1,0 +1,13 @@
+%rectangle {
+  .rectangle {
+    @include transform(translateX(-50%));
+    bottom: 9%;
+    border: 1px solid $rectangle;
+    margin: auto;
+    height: 2.5em;
+    left: 50%;
+    position: absolute;
+    width: 80%;
+    z-index: -1;
+  }
+}

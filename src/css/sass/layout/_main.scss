@@ -1,31 +1,19 @@
-@import '../containers/module';
+@import '../containers/page';
 
 .main {
-  max-width: 1280px;
   text-align: center;
-  @media only screen and (min-width: 468px) {
-
-  }
-  @media only screen and (min-width: 768px) {
-    margin: 0 2em;
-  }
-  @media only screen and (min-width: 1224px) {
-    margin: 0 5em;
-  }
-
-  .page {
+  width: 100%;
+  .pages-container {
     display: inline-block;
-    max-width: 626px;
-    position: relative;
-    width: 100%;
-    z-index: 1;
-    @media only screen and (min-width: 468px) {
-      width: 45%;
-      &:first-child {
-        margin-right: 2%;
-      }
+    max-width: 1280px;
+    @media only screen and (min-width: 768px) {
+      margin: 0 2em;
+    }
+    @media only screen and (min-width: 1224px) {
+      margin: 0 5em;
     }
 
-    @extend %module;
+    // include copy and module containers styling
+    @extend %page;
   }
 }

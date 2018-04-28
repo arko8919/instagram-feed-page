@@ -96,20 +96,21 @@ export class Main extends React.Component {
     }
 
     render() {
-        console.log(this.state.response);
         return (
             <div className='main'>
-                <Page
-                    onClick={this.handleClickPageOne}
-                    urlImage={this.state.urlImageOne}
-                    titleImage={this.state.titleImageOne}
-                />
+                <div className='pages-container'>
+                    <Page
+                        onClick={this.handleClickPageOne}
+                        urlImage={this.state.urlImageOne}
+                        titleImage={this.state.titleImageOne}
+                    />
 
-                <Page
-                    onClick={this.handleClickPageTwo}
-                    urlImage={this.state.urlImageTwo}
-                    titleImage={this.state.titleImageTwo}
-                />
+                    <Page
+                        onClick={this.handleClickPageTwo}
+                        urlImage={this.state.urlImageTwo}
+                        titleImage={this.state.titleImageTwo}
+                    />
+                </div>
             </div>
         );
     }

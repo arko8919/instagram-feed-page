@@ -15,14 +15,14 @@ header h1 {
     header h1 {
       font-size: 4rem; } }
 
-.main .page .module .copy h2 {
+.main .pages-container .module .copy h2 {
   color: #000;
   display: inline-block;
   font-size: 1.54em;
   font-weight: normal;
   margin-top: 2em;
   position: relative; }
-  .main .page .module .copy h2 .line {
+  .main .pages-container .module .copy h2 .line {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -36,7 +36,7 @@ header h1 {
     position: absolute;
     width: 1px; }
 
-.main .page .module .copy button {
+.main .pages-container .module .copy button {
   opacity: 1;
   background-color: #fff;
   border: 1px solid #0F2930;
@@ -53,84 +53,97 @@ header h1 {
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
-  .main .page .module .copy button:hover {
+  .main .pages-container .module .copy button:hover {
     color: #fff;
     background-color: #000;
     border-radius: 5px; }
 
-.main .page .module .copy {
+.main .pages-container .module .copy {
   position: relative;
   text-align: center;
   width: 100%;
   z-index: 8; }
-  .main .page .module .copy p {
+  .main .pages-container .module .copy p {
     color: #747474;
     font-size: 1.04em;
-    padding: 0 4em; }
+    padding: 0 5em; }
 
-.main .page .module img {
+.main .pages-container .module img {
   box-shadow: 0 25px 45px 0 #D7D7D7, 0 0 15px #000;
   display: block;
   height: auto;
   margin: auto;
   max-width: 100%;
   position: relative;
-  width: 75%;
+  width: 65%;
   z-index: 10; }
 
-.main .page .module {
+.main .pages-container .module .background {
+  background-color: #fff;
+  height: 87%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5; }
+
+.main .pages-container .module .decoration {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #646464;
+  text-align: center;
+  height: 0.2em;
+  margin: 2.5em auto 1.5em auto;
+  position: relative;
+  width: 0.2em;
+  z-index: 20; }
+
+.main .pages-container .module .rectangle {
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 9%;
+  border: 1px solid #C2D2C2;
+  margin: auto;
+  height: 2.5em;
+  left: 50%;
+  position: absolute;
+  width: 80%;
+  z-index: -1; }
+
+.main .pages-container .module {
   margin-bottom: 1em;
   position: relative; }
-  .main .page .module .decoration {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    text-align: center;
-    background-color: #646464;
-    height: 0.2em;
-    margin: 2.5em auto 1.5em auto;
-    position: relative;
-    width: 0.2em;
-    z-index: 20; }
-  .main .page .module .background {
-    background-color: #fff;
-    height: 85%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 5; }
-  .main .page .module .rectangle {
-    bottom: 5.5em;
-    border: 1px solid #C2D2C2;
-    margin: auto;
-    height: 4em;
-    position: relative;
-    width: 87%;
-    z-index: -1; }
+
+.main .pages-container .page {
+  display: block;
+  max-width: 626px;
+  width: 100%;
+  z-index: 1; }
+  @media only screen and (min-width: 468px) {
+    .main .pages-container .page {
+      display: inline-block;
+      width: 45%; }
+      .main .pages-container .page:first-child {
+        margin-right: 2%; } }
 
 .main {
-  max-width: 1280px;
-  text-align: center; }
-  @media only screen and (min-width: 768px) {
-    .main {
-      margin: 0 2em; } }
-  @media only screen and (min-width: 1224px) {
-    .main {
-      margin: 0 5em; } }
-  .main .page {
+  text-align: center;
+  width: 100%; }
+  .main .pages-container {
     display: inline-block;
-    max-width: 626px;
-    position: relative;
-    width: 100%;
-    z-index: 1; }
-    @media only screen and (min-width: 468px) {
-      .main .page {
-        width: 45%; }
-        .main .page:first-child {
-          margin-right: 2%; } }
+    max-width: 1280px; }
+    @media only screen and (min-width: 768px) {
+      .main .pages-container {
+        margin: 0 2em; } }
+    @media only screen and (min-width: 1224px) {
+      .main .pages-container {
+        margin: 0 5em; } }
 
 footer {
   padding: 3rem 1.5rem;

@@ -1,0 +1,19 @@
+@import './module';
+
+%page {
+  .page {
+    display: block;
+    max-width: 626px;
+    width: 100%;
+    z-index: 1;
+    @media only screen and (min-width: 468px) {
+      display: inline-block;
+      width: 45%;
+      &:first-child {
+        margin-right: 2%;
+      }
+    }
+  }
+
+  @extend %module;
+}

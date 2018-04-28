@@ -6,6 +6,7 @@ export const Img = props => {
             src={props.urlImage.url}
             width={props.urlImage.width}
             height={props.urlImage.height}
+            alt={props.titleImage}
         />
     )
 };
