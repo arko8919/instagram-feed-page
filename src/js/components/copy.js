@@ -11,8 +11,7 @@ export const Copy = props => {
                 </div>
             </h2>
             <p>
-                All quest rooms at Matter of Form are designed with luxury and comfort in mind, creating seamless
-                harmony with your retreat programme.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate.
             </p>
             <Button
                 onClick={props.onClick}
